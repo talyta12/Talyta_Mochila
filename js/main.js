@@ -10,8 +10,16 @@ form.addEventlistener("submit", (evento) => {
     console.log(nome)
     console.log(quantidade)
 
- const novoItem =  document.createElement('li')
- 
+
+    const novoItem =  document.createElement('li')
+    novoItem.classList.add("item")
+
+    const numeroItem = document.createElement('strong')
+    numeroItem.innerHTML = quantidade
+
+    console.log(numeroItem)
+    
+
 
 })
 
