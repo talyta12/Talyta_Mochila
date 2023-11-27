@@ -1,9 +1,11 @@
 const form = document.getElementById("novoItem")
 
-form.addEventListener("submit", (evento)=> {
-     evento.preventDefault() 
+form.addEventlistener("submit", (evento) => { 
+    evento.preventDefault()
 
 
-     console.log(evento)
-     console.log(evento.target[0].value)
+    console.log(evento)
+    console.log(evento.target.elements['nome'].value)
+    console.log(evento.target.elements['quantidade'].value)
 })
+
