@@ -2,6 +2,7 @@ const form = document.getElementById("novoItem")
 
 form.addEventListener("submit", ()=> {
      evento.preventDefault() 
-     
-     console.log("funcionou")
+
+     evento.target[0].value
+     console.log(evento.target[0].value)
 })
